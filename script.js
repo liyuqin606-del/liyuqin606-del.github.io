@@ -3,6 +3,8 @@
   'use strict';
 
   const chinese = Object.freeze({
+    name: '李昱嵚',
+    copyright: '© 2026 李昱嵚',
     skip: '跳转到正文',
     navLabel: '主导航',
     navResearch: '研究',
@@ -104,7 +106,7 @@
 
     // Supplement unkeyed decorative labels without changing names or paper titles.
     const supplemental = [
-      ['.site-header .wordmark', 'aria-label', 'Yuqin Li，首页'],
+      ['.site-header .wordmark', 'aria-label', '李昱嵚，首页'],
       ['.footer .wordmark', 'aria-label', '返回顶部'],
       ['.identity-strip', 'aria-label', '教育与研究背景'],
       ['.project:nth-child(1) .project-top .small-label', null, '01 / PYTHON · 统计学'],
@@ -119,9 +121,9 @@
     });
 
     const metadata = [
-      ['meta[name="description"]', 'Yuqin Li — 中南大学邓迪国际学院数学与应用数学专业本科生。研究关注可靠人工智能、智能体评估与学习系统。'],
-      ['meta[property="og:title"]', 'Yuqin Li — 数学与可靠人工智能'],
-      ['meta[property="og:description"]', '数学、计算与可靠人工智能。中南大学邓迪国际学院 Yuqin Li 的研究与开源项目。']
+      ['meta[name="description"]', '李昱嵚 — 中南大学邓迪国际学院数学与应用数学专业本科生。研究关注可靠人工智能、智能体评估与学习系统。'],
+      ['meta[property="og:title"]', '李昱嵚 — 数学与可靠人工智能'],
+      ['meta[property="og:description"]', '数学、计算与可靠人工智能。中南大学邓迪国际学院李昱嵚的研究与开源项目。']
     ].flatMap(([selector, zh]) => {
       const element = document.querySelector(selector);
       return element ? [{ element, zh, en: element.getAttribute('content') }] : [];
@@ -185,7 +187,7 @@
         toggle.setAttribute('aria-label', language === 'zh' ? '切换到英文' : 'Switch to Chinese');
         toggle.title = language === 'zh' ? '切换到英文' : 'Switch to Chinese';
       }
-      document.title = language === 'zh' ? 'Yuqin Li — 数学与可靠人工智能' : englishTitle;
+      document.title = language === 'zh' ? '李昱嵚 — 数学与可靠人工智能' : englishTitle;
       for (const item of metadata) item.element.setAttribute('content', language === 'zh' ? item.zh : item.en);
       updateStatus();
       try {
