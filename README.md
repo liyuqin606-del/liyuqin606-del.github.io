@@ -18,7 +18,7 @@ Open `http://127.0.0.1:4173/`. English is the default; `?lang=zh` opens Chinese.
 - `script.js`: Chinese translations, language switching, copy-email interaction.
 - `styles.css`: responsive layout, typography, colors and print styles.
 - `assets/geometry.svg`: a mathematical wireframe of the one-sheet hyperboloid x² + y² − z² = 1.
-- `assets/fonts/`: self-hosted Cormorant Garamond and Manrope with their SIL Open Font Licenses.
+- `assets/fonts/`: self-hosted Cormorant Garamond and Manrope for Latin text, Noto Serif SC for Chinese headings, and Noto Sans SC for Chinese body text, with their SIL Open Font Licenses. Chinese WOFF2 files are subsets of the current page text; refresh the subsets when adding Chinese characters.
 
 Update the English HTML and corresponding Chinese translation together. The public site currently presents research interests and public projects. Add specific papers only when the owner decides they are ready for public display.
 
@@ -34,6 +34,6 @@ To move this site to another host, upload the files unchanged to any static web 
 
 ## Content and credits
 
-Education and Computer Science minor: supplied by the site owner; 2025 enrollment confirmed. Institution naming: DIICSU official site. Research interests: owner's OpenReview profile, checked 5 September 2026. Specific submission entries are intentionally omitted from this public site. Project summaries: public repository READMEs, checked the same day. Summary text describes research questions, not independently verified scientific results.
+Education and Computer Science minor: supplied by the site owner; 2025 enrollment confirmed. Chinese name: 李昱嵚. Institution naming: DIICSU official site. Research interests: owner's OpenReview profile and owner's update on 5 September 2026, with recursive self-improvement (RSI) as the current primary focus. Specific submission entries are intentionally omitted from this public site. Project summaries: public repository READMEs, checked the same day. Summary text describes research questions, not independently verified scientific results.
 
-Fonts: Cormorant Garamond and Manrope, distributed under SIL OFL 1.1; license files are included. The geometry is computed from a mathematical parameterization. The site contains no generated portrait or invented achievements.
+Fonts: Cormorant Garamond, Manrope, [Noto Serif SC](https://github.com/google/fonts/tree/main/ofl/notoserifsc), and [Noto Sans SC](https://github.com/google/fonts/tree/main/ofl/notosanssc), distributed under SIL OFL 1.1; license files are included. The geometry is computed from a mathematical parameterization. The site contains no generated portrait or invented achievements.

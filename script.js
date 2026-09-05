@@ -12,26 +12,26 @@
     navEducation: '教育背景',
     navContact: '联系',
     heroEyebrow: '数学 × 计算机科学',
-    heroLine: '理解系统。<br>提出更好的问题。',
-    heroIntro: '我是<a href="https://dii.csu.edu.cn/EN/ABOUT/Why_DIICSU/Introduction.htm" target="_blank" rel="noopener noreferrer">中南大学邓迪国际学院（DIICSU）</a>数学与应用数学专业本科生，辅修计算机科学。我的研究关注如何理解与评估学习系统。',
+    heroLine: '递归自我改进。<br>从数学出发。',
+    heroIntro: '我是<a href="https://dii.csu.edu.cn/EN/ABOUT/Why_DIICSU/Introduction.htm" target="_blank" rel="noopener noreferrer">中南大学邓迪国际学院（DIICSU）</a>数学与应用数学专业本科生，辅修计算机科学。我目前主要关注递归自我改进（RSI）：人工智能系统如何改进自身的学习与问题求解过程，以及如何评估这些改进。',
     explore: '了解我的研究',
     geometryAlt: '单叶双曲面的线框图，展示直线如何构成曲面。',
     figureCaption: '从另一种视角理解结构。',
     basedAt: '所在院校',
     institutionShort: '中南大学 · 邓迪国际学院',
     focusLabel: '研究兴趣',
-    focusValue: '可靠人工智能与学习系统',
+    focusValue: '递归自我改进（RSI）',
     educationLabel: '教育背景',
     cohort: '本科在读 · 2025年至今',
     researchEyebrow: '01 / 研究',
     researchTitle: '我关注的<em>研究方向。</em>',
-    researchIntro: '从语言模型的内部机制，到评估智能体工作可靠性的方法。',
-    area1Title: '理解语言模型',
-    area1: '我关注模型的内部表征如何影响行为，以及这些关系如何在学习过程中形成。',
-    area2Title: '评估人工智能体',
-    area2: '探索如何评估智能体的工作、发现其中的失败，并理解独立验证能够提供哪些保证。',
-    area3Title: '统计学习与模型分析',
-    area3: '我对不确定性、分布偏移与模型适配感兴趣，尝试通过数学分析和可复现实验研究这些问题。',
+    researchIntro: '我关注人工智能自我改进的机制、评估方法与能力边界。',
+    area1Title: '递归自我改进',
+    area1: '探索人工智能系统如何改进自身的学习、问题求解与后续改进过程。',
+    area2Title: '评估与独立验证',
+    area2: '关注如何衡量多轮迭代中的进展、发现能力退化，并明确独立验证能够支持哪些结论。',
+    area3Title: '学习系统的数学分析',
+    area3: '我也关注不确定性、分布偏移与适配过程的稳定性，希望通过数学分析和可复现实验理解这些问题。',
     profileLink: '查看我的 OpenReview 主页',
     projectsEyebrow: '02 / 开源项目',
     projectsTitle: '让想法<em>成为实现。</em>',
@@ -104,7 +104,7 @@
     let copyState = 'idle';
     let copyInProgress = false;
 
-    // Supplement unkeyed decorative labels without changing names or paper titles.
+    // Supplement unkeyed labels and accessibility text.
     const supplemental = [
       ['.site-header .wordmark', 'aria-label', '李昱嵚，首页'],
       ['.footer .wordmark', 'aria-label', '返回顶部'],
@@ -121,9 +121,9 @@
     });
 
     const metadata = [
-      ['meta[name="description"]', '李昱嵚 — 中南大学邓迪国际学院数学与应用数学专业本科生。研究关注可靠人工智能、智能体评估与学习系统。'],
-      ['meta[property="og:title"]', '李昱嵚 — 数学与可靠人工智能'],
-      ['meta[property="og:description"]', '数学、计算与可靠人工智能。中南大学邓迪国际学院李昱嵚的研究与开源项目。']
+      ['meta[name="description"]', '李昱嵚 — 中南大学邓迪国际学院数学与应用数学专业本科生。研究兴趣包括递归自我改进（RSI）、人工智能评估与学习系统的数学分析。'],
+      ['meta[property="og:title"]', '李昱嵚 — 数学与递归自我改进'],
+      ['meta[property="og:description"]', '数学、递归自我改进与人工智能评估。中南大学邓迪国际学院李昱嵚的研究与开源项目。']
     ].flatMap(([selector, zh]) => {
       const element = document.querySelector(selector);
       return element ? [{ element, zh, en: element.getAttribute('content') }] : [];
@@ -187,7 +187,7 @@
         toggle.setAttribute('aria-label', language === 'zh' ? '切换到英文' : 'Switch to Chinese');
         toggle.title = language === 'zh' ? '切换到英文' : 'Switch to Chinese';
       }
-      document.title = language === 'zh' ? '李昱嵚 — 数学与可靠人工智能' : englishTitle;
+      document.title = language === 'zh' ? '李昱嵚 — 数学与递归自我改进' : englishTitle;
       for (const item of metadata) item.element.setAttribute('content', language === 'zh' ? item.zh : item.en);
       updateStatus();
       try {
