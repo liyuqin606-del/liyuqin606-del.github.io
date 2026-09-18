@@ -11,6 +11,7 @@
     navProjects: '项目',
     navEducation: '教育背景',
     navContact: '联系',
+    navBlog: '随笔',
     heroEyebrow: '数学 × 计算机科学',
     heroLine: '递归自我改进。<br>从数学出发。',
     heroIntro: '我是<a href="https://dii.csu.edu.cn/EN/ABOUT/Why_DIICSU/Introduction.htm" target="_blank" rel="noopener noreferrer">中南大学邓迪国际学院（DIICSU）</a>数学与应用数学专业本科生，辅修计算机科学。我目前主要关注递归自我改进（RSI）：人工智能系统如何改进自身的学习与问题求解过程，以及如何评估这些改进。',

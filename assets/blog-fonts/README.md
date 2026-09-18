@@ -1,0 +1,1 @@
+Noto Serif SC, 400 and 600. Self-hosted Unicode-range subsets from the Google Fonts CSS2 API; SIL OFL license included. Browsers download only subsets required by visible text. Full Chinese coverage allows new posts without rebuilding the font subset.

@@ -1,0 +1,18 @@
+{
+  "name": "qingfeng-yulin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "preview": "node tools/build.mjs --preview",
+    "new": "node tools/new-post.mjs",
+    "test": "node --test tools/blog.test.mjs"
+  },
+  "dependencies": {
+    "gray-matter": "4.0.3",
+    "katex": "0.18.7",
+    "markdown-it": "15.0.2",
+    "markdown-it-footnote": "4.0.0",
+    "markdown-it-texmath": "1.0.0"
+  }
+}
